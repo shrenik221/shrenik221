@@ -12,7 +12,6 @@ const bodyParser = require('body-parser');
 app.use(cors());
 app.use(compression());
 
-
 app.use(logger('dev'));
 app.use(cookieParser());
 
