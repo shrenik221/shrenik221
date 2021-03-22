@@ -1,0 +1,18 @@
+.topNav {
+  background-color: white;
+  z-index: 2;
+}
+
+.header {
+  background-color: blueviolet;
+}
+
+.p {
+  background-color: brown;
+  color: crimson;
+}
+
+
+.body {
+  background-color: darkseagreen;
+}
