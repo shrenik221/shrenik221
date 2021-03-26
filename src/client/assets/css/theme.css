@@ -1,0 +1,23 @@
+:root{
+    --colorWhite:#ffffff;
+    --colorDarkBlue:#021433;
+    --colorBlue:#0099ff;
+    --colorLightBlue:#8fcaf1;
+    --colorGrey:#636668;
+    --colorLightGrey:#cccccc;
+    --colorDarkGrey: #525659;
+    --colorBackgroundGrey: #f3f3f3;
+}
+
+/*
+    Fonts for website
+*/
+@font-face{
+    font-family: nexa-bold;
+    src:url(../fonts/boldFont.otf)format("opentype");
+}
+@font-face{
+    font-family: nexa-light;
+    src:url(../fonts/lightFont.otf)format("opentype");
+}
+

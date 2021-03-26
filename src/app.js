@@ -9,6 +9,9 @@ const logger = require('morgan');
 const compression = require('compression');
 const bodyParser = require('body-parser');
 
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.use(cors());
 app.use(compression());
 
@@ -16,13 +19,16 @@ app.use(logger('dev'));
 app.use(cookieParser());
 
 app.use(express.static(path.resolve(__dirname, '/client')));
+
+// app.use(express.static(path.resolve(__dirname, '/client/assets/images')));
+
 app.set('views', __dirname + '/client/views');
+
+
+
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use(htmlRoutes);
-
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 app.set('port', process.env.PORT || 4000);
 
