@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
   font-family: nexa-bold;
   src:url(../fonts/boldFont.otf)format("opentype");
 }
@@ -157,8 +157,8 @@
 
 .containerHowItWorks input{
   padding: 10px 32px;
-  font-family: 'nexa-light';
+  font-family: 'nexa-light';o
   margin: 10px 40px;
   border-radius: 5px;
   border: 2px solid #021433;
-}
+} */
