@@ -1,164 +1,90 @@
-/* @font-face{
-  font-family: nexa-bold;
-  src:url(../fonts/boldFont.otf)format("opentype");
-}
-@font-face{
-  font-family: nexa-light;
-  src:url(../fonts/lightFont.otf)format("opentype");
-}
-
-.topNav {
+/* Search section begins */
+.topNav{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row;
+  align-items: center;
 }
 
-#logo {
-  background-color: red;
-  margin: 10px 20px 0px 20px;
-  align-items: flex-start;
+#logo{
   width: 35%;
 }
 
-#sideMenu {
-  align-items: flex-end;
-  margin: 15px 5px 0px 0px;
-  width: 100%;
-}
-
-
-.containerSearch {
+.containerSearch{
+  background-color: var(--colorLightBlue);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #8fcaf1;
+  flex-flow: column;
 }
 
 #searchHeading{
-  color: #021433; 
-  text-align: center;
-  font-family: 'nexa-bold';
-  font-size: 40px;
-  margin: 50px 50px 20px 50px;
-  flex-wrap: wrap;
-  flex-basis: 200%;
+  font-family: nexa-bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
-#searchHeadingDescription {
-  text-align: center;
-  color:#525659;
-  font-family: 'nexa-light';
-  font-size: 20px;
-  margin : 30px;
+#searchHeadingDescription{
+  font-size:1.2rem;
+  align-items: flex-start;
 }
 
 .searchInputLocation{
-  display: inherit;
-  justify-content: center;
-  background-color: inherit;
-  font-family: 'nexa-light';
-  padding: auto;
-  margin: 5px 100px;
-  width: auto;
-  height: 2rem;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: nexa-light;
 }
 
-.searchInputLocation #searchLocation,#markerIcon,
-#crosshairIcon{
-  border-style: none;
-  background-color: white;
-  font-family: inherit;
+#crosshairIcon, #markerIcon{
+    border-style: none;
+    background-color: white;
+    padding: 0 1rem;
+    height: 1.75rem;
+    width: 3.5rem;
+    color: black; 
 }
 
 #searchInputKeyword{
-  border-style: none;
-  display: inherit;
-  font-family: inherit;
-  font-size: 12px;
-  height:1.3rem;
-  text-align: start;
-  margin: 5px 100px;
-  padding:5px 0px;
-  padding-right: 5px;
+  font-family: nexa-light;
+  margin-left: 2rem;
+  margin-right:2rem;
 }
 
-#searchSubmit {
-  color: white;
-  font-family: 'nexa-light';
-  background-color: #021433;
-  align-items: center;
-  border-style: none;
-  border: 2px solid #021433;
-  padding: 5px 32px;
-  margin: 10px 170px;
+.searchSubmit{
+  background-color: var(--colorDarkBlue);
+  color: var(--colorWhite);
+  margin-left: 9rem;
+  margin-right:9rem;
+}
+/* Search section ends */
+
+/* Section how it works */
+
+.howItWorks h2{
+  font-family: nexa-bold;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.howItWorks p{
+  font-size: 1.2em;
+  justify-content: left;
+  margin-left:1rem;
+  margin-right:1rem;
 }
 
 .containerHowItWorks{
   display: flex;
   flex-flow: column;
-  justify-content: center;
-  background-color: #ffffff;
 }
 
-#headingHowItWorks{
-  color: #021433; 
-  text-align: center;
-  font-family: 'nexa-bold';
-  font-size: 30px;
-  margin: 50px 50px 20px 50px;
-  flex-wrap: wrap;
-  flex-basis: 200%;
-  font-weight: bold;
+/* Section how it works ending*/
+
+
+@media only screen and (min-width:740px){
+
 }
 
-#descriptionHowItWorks{
-  text-align: center;
-  color:#525659;
-  font-family: 'nexa-light';
-  font-size: 20px;
-  margin : 10px 20px;
-}
 
-.divFixConsultation{
-  display: flex;
-  flex-flow: column;
-}
-
-#fixConsultationHeading {
-  color: #021433; 
-  text-align: center;
-  font-family: 'nexa-bold';
-  font-size: 20px;
-  margin: 50px 50px 20px 50px;
-  flex-wrap: wrap;
-  flex-basis: 200%;
-  font-weight: bold;
-}
-
-#fixConsultationDescription{
-  text-align: center;
-  color:#525659;
-  font-family: 'nexa-light';
-  font-size: 16px;
-  margin : 10px 20px;
-}
-
-.divFixConsultation img{
-  display:block;
-  max-height: 50%;
-  max-width: 50%;
-  position: relative;
-  margin: 5px 80px 5px 5px;
-  padding: 5px 50px 5px 5px;
-}
-
-.containerHowItWorks input{
-  padding: 10px 32px;
-  font-family: 'nexa-light';o
-  margin: 10px 40px;
-  border-radius: 5px;
-  border: 2px solid #021433;
-} */
+@media only screen and (min-width:1240px){} 

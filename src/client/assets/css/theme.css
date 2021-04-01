@@ -12,12 +12,11 @@
 @font-face{
     font-family: nexa-bold;
     src:url(../fonts/boldFont.otf)format("opentype");
-}
-@font-face{
+  }
+  @font-face{
     font-family: nexa-light;
     src:url(../fonts/lightFont.otf)format("opentype");
-}
-
+  }
 
 h1,h2,h3,h4,h5,h6{
     font-family: nexa-bold;
@@ -65,14 +64,14 @@ p{
     font-family: nexa-light;
     font-size: 1rem;
     letter-spacing: 0.2vw;
-    color: var(--colorLightGrey);
+    margin-bottom: 1rem;
+    color: var(--colorDarkGrey);
 }
 
 button {
-    background-color: var(--colorDarkBlue);
     border-style: none;
-    color: var(--colorWhite);
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
     font-family: nexa-bold;
 }
 
@@ -92,17 +91,6 @@ textarea{
     border: 1px solid var(--colorLightGrey);
 }
 
-header {
-    padding: 1rem 1.2rem;
-}
-section {
-    padding: 2rem 1.2rem;
-}
-
-footer {
-    padding: 2rem 1.2rem;
-}
-
 label{
     font-family: nexa-light;
     font-size: 1rem;
@@ -118,26 +106,17 @@ li{
     letter-spacing: 0.3vw;
 }
 
-
-section{
-    padding: 1.5rem 0.8rem;
-    text-align:center;
-}
-
 input,select{
     font-family:  nexa-light;
-    padding: 0.8rem 0.75rem;
     font-size:1rem;
-    line-height: 1.4rem;
-    width:100%;
+    line-height: 1.6rem;
     color:var(--colorGrey);
     border-style: none;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 textarea{
     font-family: nexa-light;
-    padding: 0.7rem 0.7rem;
     width: 100%;
     color:var(--colorGrey);
     margin-bottom: 1.2rem;
@@ -150,14 +129,26 @@ textarea{
     color: var(--colorLightGrey);
 }
 
+header{
+    padding: 0.2rem 1rem;
+}
+
+section{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
 @media only screen and (min-width:768px) and (max-width:1024px){
 
     header {
         padding: 1rem 2rem;
     }
+ 
+
     section {
         padding: 2rem 2rem;
-    }
+        text-align:center;
+    } 
 
     footer {
         padding: 2rem 2rem;
@@ -171,10 +162,14 @@ textarea{
         padding: 1rem 3rem 1rem 4.5rem;
     }
 
-    section {
+    /* section {
         font-size: 0.9rem;
         line-height: 2.4rem;
         padding: 4.5rem 4.5rem;
+    } */
+    section {
+        font-size: 0.9rem;
+        line-height: 2.4rem;
     }
 
     footer {
