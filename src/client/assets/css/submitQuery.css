@@ -1,0 +1,21 @@
+.submitQuery {
+    background-color: var(--colorLightBlue);
+    color: var(--colorLightGrey);
+}
+
+.containerSubmitQuery h2 {
+    color: var(--colorWhite);
+}
+
+.containerSubmitQuery p {
+    padding: 1rem 0;
+}
+
+.containerSubmitQuery button {
+    background-color: #0671bb;
+    color: var(--colorWhite);
+    border-style: none;
+    font-size: 1.2rem;
+    border-radius: 5px;  
+    padding: 1rem
+}

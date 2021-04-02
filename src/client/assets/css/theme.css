@@ -11,12 +11,12 @@
 
 @font-face{
     font-family: nexa-bold;
-    src:url(../fonts/boldFont.otf)format("opentype");
+    src:url(../fonts/boldFont.otf);
   }
-  @font-face{
+@font-face{
     font-family: nexa-light;
-    src:url(../fonts/lightFont.otf)format("opentype");
-  }
+    src:url(../fonts/lightFont.otf);
+}
 
 h1,h2,h3,h4,h5,h6{
     font-family: nexa-bold;
@@ -71,7 +71,6 @@ p{
 button {
     border-style: none;
     padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
     font-family: nexa-bold;
 }
 
@@ -112,7 +111,6 @@ input,select{
     line-height: 1.6rem;
     color:var(--colorGrey);
     border-style: none;
-    margin-bottom: 1rem;
 }
 
 textarea{
@@ -134,7 +132,7 @@ header{
 }
 
 section{
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -162,15 +160,11 @@ section{
         padding: 1rem 3rem 1rem 4.5rem;
     }
 
-    /* section {
-        font-size: 0.9rem;
-        line-height: 2.4rem;
-        padding: 4.5rem 4.5rem;
-    } */
     section {
         font-size: 0.9rem;
         line-height: 2.4rem;
-    }
+        padding: 4.5rem 4.5rem;
+    } 
 
     footer {
         padding: 2rem 4.5rem;
