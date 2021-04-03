@@ -8,14 +8,16 @@
 }
 
 .containerSubmitQuery p {
+    color:var(--colorDarkBlue);
     padding: 1rem 0;
 }
 
 .containerSubmitQuery button {
-    background-color: #0671bb;
+    background-color: var(--colorBlue);
     color: var(--colorWhite);
-    border-style: none;
+    justify-self: center;
+    width: 15rem;
+    height: 3rem;
     font-size: 1.2rem;
     border-radius: 5px;  
-    padding: 1rem
 }

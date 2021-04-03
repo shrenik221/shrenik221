@@ -30,29 +30,29 @@
   </header>
 
   <section class="search">
-    <div class="containerSearch">
       <h2 id="searchHeading">
         Find Affordable Healthcare
       </h2>
       <p id="searchHeadingDescription">
         Join the thousands of others who have excercised their rights to quality healthcare at a price you can afford.
       </p>
-      <div class="containerSearchLocation">
-        <button id="markerIcon">
-          <i class="fas fa-map-marker-alt">
-          </i>
-        </button>
-        <input type="text" id="searchLocation" placeholder="Ahmedabad">
+      <div class="containerSearch">
+        <div class="containerSearchLocation">
+          <button id="markerIcon">
+            <i class="fas fa-map-marker-alt">
+            </i>
+          </button>
+          <input type="text" id="searchLocation" placeholder="Ahmedabad">
+          </input>
+          <button id="crosshairIcon">
+            <i class="fas fa-crosshairs"></i>
+          </button>
+        </div>
+        <input type="text" class="searchInputKeyword" id="searchInputKeyword" placeholder=" Search for Doctor, hospitals and treatments">
         </input>
-        <button id="crosshairIcon">
-          <i class="fas fa-crosshairs"></i>
+        <button class="searchSubmit" id="searchSubmit" type="submit">
+          Search
         </button>
-      </div>
-      <input type="text" id="searchInputKeyword" placeholder=" Search for Doctor, hospitals and treatments">
-      </input>
-      <button class="searchSubmit" id="searchSubmit" type="submit">
-        Search
-      </button>
     </div>
   </section>
 
@@ -67,7 +67,10 @@
         <h4 class="text">Fix Consultation</h4>
       </div>
       <div class="stepContent activeContent" id="fixConsultationContent">
-        <img id="fixConsultationImage" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="">
+        <div class="stepImage" id="img1">
+          <img id="img01" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png"
+              alt="">
+      </div>
         <h4>Fix Consultation</h4>
         <p>This depicts that user will have to fix appointment first
           when it selects a particular doctor.</p>
@@ -77,7 +80,10 @@
         <h4 class="text">Upload Medical Reports</h4>
       </div>
       <div class="stepContent" id="uploadMedicalReportsContent">
-        <img id="uploadMedicalReportsImage" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png" alt="">
+        <div class="stepImage" id="img2">
+          <img id="img02" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png"
+              alt="">
+        </div>
         <h4>Upload Medical Reports</h4>
       </div>
       <div class="stepBox" id="box3">
@@ -85,7 +91,10 @@
         <h4 class="text">Consult with doctor</h4>
       </div>
       <div class="stepContent" id="contentConsultWithDoctor">
-        <img id="imageConsultWithDoctor" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg" alt="">
+        <div class="stepImage" id="img">
+          <img id="img03" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg"
+              alt="">
+        </div>
         <h4>Consult with doctor</h4>
       </div>
       <div class="stepBox" id="box4">
@@ -93,15 +102,20 @@
         <h4 class="text">Fix Surgery</h4>
       </div>
       <div class="stepContent" id="contentFixSurgery">
-          <img id="imageFixSurgery" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg" alt="">
-        <h4>Fix Surgery</h4>
+        <div class="stepImage" id="stepImg">
+          <img id="img04" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg"
+              alt="">
+      </div><h4>Fix Surgery</h4>
       </div>
       <div class="stepBox" id="box5">
         <h4 class="number">05</h4>
         <h4 class="text">Hospital sent estimates</h4>
       </div>
       <div class="stepContent" id="contentHospitalEstimates">
-        <img id="imageHospitalEstimates" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg" alt="">
+        <div class="step-photo" id="step5-img">
+          <img id="img05" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg"
+              alt="">
+        </div>
         <h4>Hospital sent estimates</h4>
       </div>
       <div class="stepBox" id="box6">
@@ -109,7 +123,10 @@
         <h4 class="text">Payment</h4>
       </div>
       <div class="stepContent" id="contentPayment">
-          <img id="imagePayment" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg" alt="">
+        <div class="step-photo" id="step6-img">
+          <img id="img06" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg"
+              alt="">
+        </div>
         <h4>Payment</h4>
       </div>
       <div class="stepBox" id="box7">
@@ -117,7 +134,10 @@
         <h4 class="text">Surgery Completed</h4>
       </div>
       <div class="stepContent" id="contentSurgeyrComplete">
-          <img id="imageSurgeryComplete" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg" alt="">
+        <div class="step-photo" id="step7-img">
+          <img id="img07" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg"
+              alt="">
+        </div>
         <h4>Surgery Completed</h4>
       </div>
     </div>
@@ -125,9 +145,12 @@
 
   <section class="worldClassDoctors">
     <h2>World Class Expert Doctors!</h2>
-    <p>The University of Texas Southwestern Medical Center has long been a world-renowned research hospital. But
-        until the `80s, you couldn't go there. Now, with the addition of Aston Center and Zale Lipshy hospital, UT
-        Southwestern is also a mecca for patient care.</p>
+    <p>The university of Texas Southwestern 
+      Medical Center has been a long world
+      -renowned research hospital. But until the `80s, you couldn't go there. Now, 
+      with the addition of Aston Center and 
+      Zale Lipshy hospital, UT Southwestern is 
+      also a mecca for patient care.</p>
     <div class="containerCards">
         <div class="card">
             <div class="imageDoctor" id=doc1>
@@ -194,6 +217,11 @@
             </div>
         </div>
     </div>
+    <div class="dots">
+      <span class="dot d1"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
   </section>
 
   <section class="treatments">
@@ -244,12 +272,19 @@
             </div>
         </div>
     </div>
+    <div class="dots">
+      <span class="dot d1"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
   </section>
 
   <section class="services">
     <h2>Exclusive Services</h2>
-    <p>We want you to be comfortable and thus apart from treating your illness, we provide you with other
-        services that can ease you.</p>
+    <p>We want you to be comfortable and 
+      thus apart from treating your illness, we 
+      provide you with other services that you 
+      can see</p>
     <div class="containerServices">
         <div class="imageServices">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="item1">
@@ -294,7 +329,7 @@
       <li><a>Doctor</a></li>
       <li><a>Hospital</a></li>
       <li><a>Treatment</a></li>
-      <li><a>Contact Us</a></li>
+      <li><a>Other Services</a></li>
       <li><a>FAQs</a></li>
   </ul>
 
@@ -305,8 +340,9 @@
       <i class="fab fa-google-plus-g"></i>
       <i class="fab fa-instagram"></i>
   </div>
-  <p class="copyright">All Rights Reserved. &copy; tvastra 2020</p>
+  <p class="copyright">All Rights Reserved. &copy; tvastra 2018</p>
 </footer>
 
+<script src="scripts/script.js"></script>
 </body>
 </html>

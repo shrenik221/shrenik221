@@ -25,6 +25,10 @@
   background-color: var(--colorLightBlue);
 }
 
+.search p{
+  margin: 1rem auto;
+}
+
 .containerSearch{
   background-color: var(--colorLightBlue);
   display: flex;
@@ -32,60 +36,41 @@
   flex-flow: column;
 }
 
-#searchHeading{
-  font-family: nexa-bold;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#searchHeadingDescription{
-  font-size:1.1rem;
-  margin-top: 1rem;
-  letter-spacing: 0.1rem;
-  align-items: flex-start;
-}
-
 .containerSearchLocation{
   display: flex;
   justify-content: center;
-  font-family: nexa-light;
+  background-color: var(--colorWhite);
   height: 3rem;
   margin-bottom: 0.5rem;
 }
 
-#searchLocation{
-  font-size: 0.9rem;
-  border-style: none;
-  background-color: white;
-  padding : 0.5rem;
-  height: 2rem;
+.containerSearchLocation input{
   width: 100%;
+  font-size: 0.9rem;
 }
 
-#crosshairIcon, #markerIcon{
+.containerSearchLocation button{
     border-style: none;
     background-color: white;
     padding: 0 1rem;
-    height: 3rem;
     color: black; 
 }
 
-#searchInputKeyword{
-  font-size: .9rem;
-  height: 2rem;
-  width: 95%;
+.searchInputKeyword{
+  font-size: 0.9rem;
+  height: 3rem;
+  width: 100%;
   padding:0.5rem;
-  border-style: none;
+  display: block;
+  margin: auto;
+  padding-left: 0.5rem;
 }
 
-.containerSearch  .searchSubmit{
+ .searchSubmit{
   background-color: var(--colorDarkBlue);
-  justify-self: self-end;
   color: var(--colorWhite);
-  margin-top:1rem;
-  padding: 1rem;
-  font-size: 1rem;
-  width: 40%;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
 }
 /* Search section ends */
 
@@ -102,10 +87,8 @@
 }
 
 .howItWorks p{
-  font-size: 1.2em;
   justify-content: center;
-  margin-left:1rem;
-  margin-right:1rem;
+  font-size: 1rem;
 }
 
 .stepBox{
@@ -123,40 +106,48 @@
   
 }
 
-.stepBox .text {
-  justify-self: left;
-  line-height: 2rem;
-  text-align: left;
+.stepBox:last-child {
+  margin-bottom: 0;
 }
 
-.activeContent {
-  display: block;
-}
-
-.currentBox {
+.currentBox{
   border: 2px solid var(--colorDarkBlue);
   color: var(--colorDarkBlue);
 }
 
-.currentBox .number {
+.stepBox .number{
+  color: var(--colorLightGrey);
+}
+
+.currentBox .number{
   color: var(--colorLightBlue);
+}
+
+.stepBox .text {
+  justify-self: left;
+  line-height: 2rem;
+  text-align: left;
+  color:var(--colorLightGrey);
+}
+
+.currentBox .text{
+  color: var(--colorDarkBlue)
 }
 
 .stepContent {
   max-width: 450px;
   margin: 0 auto;
   display: none;
-  color: var(--colorDarkBlue);
-  
+  color: var(--colorLightGrey);
 }
 
-
-
+.activeContent {
+  display: block;
+}
 
 .stepContent p {
   padding: 1rem 0 0;
 }
-
 
 .stepContent img {
   width: 100%;
@@ -181,8 +172,7 @@
 }
 
 .worldClassDoctors p  {
-  font-family: nexa-light;
-  font-size: 1.2rem;
+  font-size:1.1rem;
   color: white;
   margin: 1rem auto;
 } 
@@ -292,7 +282,7 @@
 
 
 
-.treatment:before{
+.treatments>.containerTreatments>.treatment:before{
   content:'';
   position:absolute;
   left:0; top:0;
@@ -323,14 +313,11 @@
   color: var(--colorWhite);
 }
 
-.treatmentImage  span {
-  font-size: 1rem;
-}
 /* Treatments section ends here  */
 
 /* Services starts*/
 .services {
-  background-color: var(--colorLightGrey);
+  background-color: var(--colorBackgroundGrey);
   color: var(--colorDarkBlue);
   text-align: center;
 }
@@ -342,6 +329,7 @@
 }
 
 .services  p  {
+  font-size: 1.1rem;
   margin: 1rem auto;
 }
 
@@ -371,14 +359,132 @@
 
 .imageServices h6 {
   font-size: 0.9rem;
-  color: var(--colorDarkBlue);
+  color: var(--colorDarkGrey);
 }
 
 /* Services ends */
 
-@media only screen and (min-width:1240){
+@media only screen and (min-width:768px) and (max-width:1024px){
+  
+.containerSearch{
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  /* column-gap: 2px; */
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 2.5rem;
+  font-size: 0.75rem;
+}
+.containerSearchLocation {
+  height: inherit;
+  font-size: inherit;
+  margin: auto;
+  margin-right: 1px;
+}
+
+.containerSearchLocation input {
+  font-size: inherit;
+}
+
+.searchInputKeyword {
+  height: inherit;
+  font-size: inherit;
+} 
+
+.searchSubmit {
+  width: 100%; 
+  margin: auto;
+  height: inherit;
+  font-size: inherit;
+}
+
+
+/* How it Works */
+
+.containerHowItWorks {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+    align-content: center;  
+    row-gap: 1rem;
+}
+
+.howItWorks .containerHowItWorks p{
+  margin-bottom: 0rem;
+}
+
+.stepBox {
+    padding-right: 0.2rem;
+    margin: 0;
+}
+
+.howItWorks .stepBox h4 {
+    font-size: 1.1rem;
+}
+
+.stepContent {
+    grid-column: 2/3;
+    grid-row: 1/8;
+    padding: 2rem 0 1rem 2rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.stepContent img {
+    width:80%;
+    height: 80%;
+    object-fit: fill;
+}
+
+/* doctors start */
+.containerCards {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.card {
+    width: 100%;
+}
+
+.nameDoctor h5{
+  font-size: inherit;
+}
+
+/* Doctors ending */
+
+/*Treatments */
+.containerTreatments {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    column-gap: 1rem;
+}
+
+/* Exclusive Services */
+.containerServices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.imageServices p {
+    padding-top: 1rem;
+}
+/*Image Services */
 
 }
 
 
-@media only screen and (min-width:768px){} 
+@media only screen and (min-width:1025px){
+
+} 
