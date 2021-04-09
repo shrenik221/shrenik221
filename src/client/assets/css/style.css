@@ -364,7 +364,7 @@
 
 /* Services ends */
 
-@media only screen and (min-width:768px) and (max-width:1024px){
+@media only screen and (min-width:768px){
   
 .containerSearch{
   display: grid;
@@ -486,5 +486,58 @@
 
 
 @media only screen and (min-width:1025px){
+  
+  .search{
+    background-image: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: left;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .search p {
+    margin: 1rem 0;
+    width: 60%;
+  }
 
+  .containerSearchLocation{
+    width: 99.5%;
+  }
+
+  /* How it works  */
+
+  .howItWorks {
+    text-align: left;
+  }
+
+  .containerHowItWorks {
+      row-gap: 0.25rem;
+  }
+
+  .stepBox {
+    height: 6rem;
+    grid-template-columns: 20% auto;
+    max-width: 500px;
+    justify-self: left;
+    border-radius: 5px;
+  }
+
+  .currentBox{
+    border-color: var(--colorLightBlue);
+  }
+
+  .stepContent {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .stepContent img {
+    width: 90%;
+    max-height: 640px;
+  }
+
+  /* Doctors list section  */
+
+  
 } 

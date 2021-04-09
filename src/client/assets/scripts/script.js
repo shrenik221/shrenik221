@@ -1,5 +1,5 @@
 
-let step_boxClass = document.getElementsByClassName("step-box");
+let step_boxClass = document.getElementsByClassName("stepBox");
 
 for(let i=0; i<step_boxClass.length; i++) {
     step_boxClass[i].addEventListener('click', function(e) {
