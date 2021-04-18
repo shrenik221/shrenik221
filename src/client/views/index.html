@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tvastra</title>
   <link rel="stylesheet" href="../assets/css/reset.css">
   <link rel="stylesheet" href="../assets/css/theme.css">
   <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/submitQuery.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -18,14 +19,29 @@
 <body>
 
   <header>
-    <nav class="topNav">
       <a>
-        <img id="logo" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo" />
+        <img class="logo" id="logo" src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="Logo" />
       </a>
-      <a>
-        <i id="sideMenu" class="fas fa-bars menu-bar">
-        </i>
-      </a>
+      <nav>
+      <a href="#" class="hideDesktop">
+        <i id="barIcon" class="fas fa-bars menuBar"></i>
+      </a>  
+        <ul id="nav-ul" class="showDesktop hideMenu">
+          <li id="exitMenu" class="exitMenu hideDesktop"><i class="fa fa-times"></i></li>
+          <li><a href="doctor.html">Doctors</a></li>
+          <li><a href="hospital.html">Hospitals</a></li>
+          <li><a href="treatment.html">Treatments</a></li>
+          <li><a href="#">Other Services</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+      </ul>
+      <div class="nav-cta hideMenu">
+          <a href="login.html">
+              <button class="loginButton">Login / Signup</button>
+          </a>
+          <a href="get.html">
+              <button class="getQuoteButton">Get a Quote</button>
+          </a>
+      </div>
     </nav>
   </header>
 
@@ -242,42 +258,42 @@
     <p>The hospital provides various medical treatments done by our expert doctors. Your health is our priority.</p>
     <div class="containerTreatments">
 
-        <div class="treatment">
+        <div class="treatment t1">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Dentistry</h5>
                 <span>50+ Specialists</span>
             </div>
         </div>
-        <div class="treatment">
+        <div class="treatment t2">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Cancer</h5>
                 <span>50+ Specialists</span>
             </div>
         </div>
-        <div class="treatment">
+        <div class="treatment t3">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Cardiologic Treatment</h5>
                 <span>50+ Specialists</span>
             </div>
         </div>
-        <div class="treatment">
+        <div class="treatment t4">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Multi Organ Transplant</h5>
                 <span>50+ Specialists</span>
             </div>
         </div>
-        <div class="treatment">
+        <div class="treatment t5">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Orthopedics Surgery</h5>
                 <span>50+ Specialists</span>
             </div>
         </div>
-        <div class="treatment">
+        <div class="treatment t6">
             <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--000.jpg" />
             <div class="treatmentImage">
                 <h5 class="headingTreatment">Infertility Treatment</h5>

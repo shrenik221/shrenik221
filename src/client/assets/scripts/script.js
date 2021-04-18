@@ -1,3 +1,20 @@
+var menu = document.getElementById('barIcon');
+var nav = document.getElementById('nav-ul');
+var exit = document.getElementById('exitMenu');
+
+// console.log('This is loading')
+// console.log(menu, nav, exit);
+
+menu.addEventListener('click', function (e) {
+    nav.classList.toggle('hideMenu');
+    e.preventDefault();
+});
+
+exit.addEventListener('click', function (e) {
+    nav.classList.add('hideMenu');
+    e.preventDefault();
+});
+
 
 let step_boxClass = document.getElementsByClassName("stepBox");
 
@@ -18,5 +35,5 @@ for(let i=0; i<step_boxClass.length; i++) {
         console.log(this.className);
         e.preventDefault();
     });
-    
 }
+

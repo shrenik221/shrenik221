@@ -1,0 +1,364 @@
+.docHeader {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.docHeader h3 {
+    font-family: nexa-light;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.docHeader button {
+    background-color: lightgrey;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.docHeader button i {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+.banner {
+    display: none;
+}
+.filterContainer {
+    display: none;
+}
+
+.filterContainerHeading {
+    display: none;
+}
+
+.docCardsContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1rem;
+    width: 100%;
+    margin: auto;
+
+}
+
+.docCardsContainer .docCard {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    /* justify-content: space-evenly; */
+    align-content: center;
+    justify-items: left;
+    align-items: center;
+
+    width: 100%;
+    border: 2px solid var(--colorLightGrey);
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.docCard .docName {
+    color: #4293c5;
+    padding: 0rem 2rem;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    position: relative;
+}
+
+.docCard .docName::before {
+    content: '\2015';
+    font-size: 1.75rem;
+    position: absolute;
+    left: 0rem;
+}
+
+.docCard .docInfo {
+    text-align: left;
+}
+
+.docCard .docInfo ul {
+    padding-top: 0.5rem;
+}
+.docCard .docInfo ul li{
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-content: center;
+    justify-content: left;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+.docCard .docInfo li i {
+    color: var(--colorBlue);
+    justify-self: center;
+}
+
+.docCard .docInfo li span {
+    justify-self: left;
+}
+
+.docCard .appointment-btn {
+    justify-self: center;
+    margin: 0.5rem 0;
+}
+
+.book-btn {
+    cursor: pointer;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--colorDarkBlue);
+    color: var(--colorWhite);
+}
+
+.docCard .docImg {
+    width: 100%;
+    height:100%;
+    text-align: center;
+    max-width: 450px;
+    max-height: 450px;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+.docCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 700px) {
+    .filterContainer {
+        display: block;
+    }
+
+    .docFunctionality {
+        display: grid;
+        grid-template-columns: 2fr 8fr;
+        column-gap: 1rem;
+    }
+
+    .filters {
+        border-bottom: 2px solid var(--colorLightGrey);
+        padding: 1rem 0;
+    }
+    
+    .filterHeading {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-content: center;
+        align-items: center;
+        justify-items: left;
+        padding-bottom: 1rem;
+    }
+
+    .filterHeading  h4{
+        display: inline;
+        font-family: nexa-light;
+        color: var(--colorDarkBlue);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .filterHeading i {
+        color: var(--colorBlue);
+        
+    }
+    .filterContent {
+        display: grid;
+        grid-template-columns: 2rem auto;
+
+        align-content: center;
+        align-items: center;
+        justify-items: left;
+        font-size: 1rem;
+        color: var(--colorDarkBlue);
+    }
+
+    .filterContent label {
+        justify-self: left;
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: var(--colorDarkBlue);
+    }
+
+    .showMore {
+        color: var(--colorBlue);
+        font-family: nexa-bold;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .docCardsContainer .docCard {
+        display: grid;
+        grid-template-columns: 7fr 5.5fr;  
+        grid-template-rows: auto auto auto;
+        padding-top: 0;
+        column-gap: 4rem;
+    }
+
+    .docCard .docName {
+        padding-top: 1rem;
+    }
+
+    .docCard .docInfo {
+        align-self: flex-start;
+        padding-top: 0.5rem;
+    }
+
+    .docCard .docInfo ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: flex-start;
+        justify-content: flex-start;
+        padding-top: 0;
+        row-gap: 0.5rem;
+        padding-left: 2rem;
+    }
+
+    .docCard .docInfo ul li {
+        padding: 0;
+        padding-right: 0.5rem;
+    }
+
+    .docCard .docInfo ul li i {
+        justify-self: flex-start;
+    }
+
+    .docCard .appointment-btn {
+        margin: 1rem 0;
+        justify-self: flex-start;
+        padding-left: 2rem;
+    }
+
+    .docCard .docImg {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        height: 100%;
+        max-height: 24rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .banner {
+        display: block;
+        /* background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png); */
+        width: 100%;
+        height: 200px;
+        vertical-align: middle;
+        color:  var(--colorDarkBlue);
+        position: relative;
+    }
+
+    .banner > img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        transform: scaleX(-1);
+        opacity: 0.25;
+    }
+
+    .banner::before {
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(var(--colorBlue), var(--colorBlue));
+        position: absolute;
+        opacity: 0.4;
+        z-index: 2;
+    }
+
+    .banner label {
+        position: absolute;
+        z-index: 3;
+        left: 4.5rem;
+        top: 85px;
+        color: inherit;
+        font-size: 1.3rem;
+    }
+
+    .banner label a {
+        color: inherit;
+        font-family: nexa-bold;
+    }
+
+    .docHeader button {
+        font-size: 0.85rem;
+    }
+
+    .docFunctionality {
+        padding-top: 0;
+    }
+
+    .docCard .docInfo li span {
+       font-size: 1.2rem;
+       line-height: 1.4rem;
+    }
+    
+
+    .filterContainerHeading {
+        display: block;
+    }
+
+    .filterContainerHeading h4 {
+        text-align: start;
+        background-color: var(--colorBackgroundGrey);
+        line-height: 2.5rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        color: var(--colorDarkBlue);
+        opacity: 0.8;
+    }
+
+    .filters {
+        padding-left: 1rem;
+    }
+
+    .filterHeading {
+        font-size: 1rem;
+    }
+
+    .filterContent {
+        font-size: 0.85rem;
+    }
+
+    .showMore {
+        text-align: start;
+        font-size: 0.85rem;
+    }
+
+    .docCardsContainer {
+        row-gap: 0.5rem;
+    }
+
+    .docCardsContainer .docCard {
+        grid-template-columns: 5fr 2fr;
+        column-gap: 1rem;
+        grid-template-rows: 3rem 7rem 5rem;
+    }
+
+    .docCard .docInfo {
+        align-self: center;
+    }
+
+    .docCard .docInfo ul {
+        grid-template-columns: auto auto;
+        column-gap: 2rem;
+    }
+
+    .docCard .docInfo ul li {
+        font-size: 0.85rem;
+    }
+
+    .book-btn {
+        color: var(--colorWhite);
+        background-color: var(--colorDarkBlue);
+        font-size: 1.2rem;
+    }
+}

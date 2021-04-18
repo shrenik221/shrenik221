@@ -63,6 +63,7 @@ img{
 }
 
 p{
+    line-height: 1.4rem;
     font-family: nexa-light;
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -94,10 +95,6 @@ label{
 a{
     cursor: pointer;
     text-decoration: none;
-}
-
-span{
-    font-family: nexa-light;
 }
 
 ui>li,oi>li{
@@ -162,8 +159,8 @@ section{
     }
     
     h5{
-        font-size: 1.8rem;
-        line-height: 2rem;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
     }
     
     h6 {
@@ -197,8 +194,8 @@ section{
     }
     
     h2{
-        font-size: 2rem;
-        line-height: 2.2rem;
+        font-size: 2.2rem;
+        line-height: 2.4rem;
     }
     
     h3{
@@ -219,6 +216,11 @@ section{
     h6 {
         font-size: 2.2rem;
         line-height: 2.4rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+        line-height: 1.6rem;
     }
 
     header {
